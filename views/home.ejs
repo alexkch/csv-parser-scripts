@@ -1,0 +1,17 @@
+<body>
+  <main>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="form-control">
+        <label for="csv">CSV</label><br />
+        <input type="file" name="csv" id="csv" multiple />
+      </div>
+
+      <input type="hidden" value="" name="csvId" />
+      <button class="btn" type="submit">Upload</button>
+    </form>
+
+    <form action="/download" method="GET">
+      <button type="submit" class="btn">Download</button>
+    </form>
+  </main>
+</body>
